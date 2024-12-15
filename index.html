@@ -11,13 +11,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div id="app">
     <main>
-      <div class="main-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, commodi non amet, beatae fugiat deleniti eaque vel sed placeat nihil deserunt quasi tempore ipsum odio adipisci quisquam nisi quo! Mollitia. LOREM</div>
+      <div class="main-container">
+        <div class="back">
+          <img src="./assets/icons/arrow-left-02.svg" alt="">
+          <span>Voltar</span>
+        </div>
+          <h1>Formulário de matrícula</h1>
+          <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+         
+          <form enctype="multipart/form-data" method="post">
+            <fieldset class="child-info">
+            <legend>Informações da Criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome Completo</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Nome da criança">
+            </div>
+           
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" id="birth" name="birth" placeholder="Nome da criança" lang="pt-Br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="Male">Masculino</option>
+                <option value="Female">Feminino</option>
+                <option value="blank">Prefiro não responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10"
+              placeholder="A criança possui alguma condição médica? (se sim, especifique)"></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="./assets/icons/cloud-upload.svg" alt="ícone de upload">
+              <p>Clique aqui para <br>selecionar arquivos</p>
+            </div>
+
+            </fieldset>
+          </form>
+      </div>
     </main>
+
       <aside>
-        <div class="aside-container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet expedita reiciendis voluptatum sunt animi ratione, sapiente, error magni eveniet aliquam quaerat. Labore sequi eveniet, culpa provident libero temporibus placeat nostrum.</div>
+        <div class="aside-container">
+          <header>
+            <img src="assets/icons/logo.svg" alt="">
+            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+          </header>
+          <img src="./assets/icons/Illustration.svg" alt="">
+        </div>
       </aside>
+
   </div>
 
 </body>
