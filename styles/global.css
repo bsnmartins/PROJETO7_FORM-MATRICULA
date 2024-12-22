@@ -19,7 +19,7 @@
   --surface-disabled: #E7E5E4;
 
   --stroke-default: #D6D3D1;
-  --stroke-hightlight: #F3541C;
+  --stroke-highlight: #F3541C;
   --semantic-error: #DC2626;
 }
 
@@ -49,3 +49,8 @@ img {
 .flex-2 {
   flex: 2;
 }
+
+.sport-section {
+  margin-top: 1.5rem;
+}
+
