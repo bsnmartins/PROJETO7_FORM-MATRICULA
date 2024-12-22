@@ -101,6 +101,55 @@
             </div>
 
             </fieldset>
+
+            <fieldset class="parents">
+              <legend>Informações do responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="parent">Nome do responsável</label>
+                <input type="text" id="parent" name="parent" placeholder="Nome do responsável">
+                <small>Principal responsável legal e contato de emergência</small>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="telephone">Telefone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="(xx) X XXXX-XXXX">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" name="mail" placeholder="email@email.com.br" required>
+                <div class="error">
+                  <img src="./assets/icons/alert-circle.svg" alt="ícone de atenção">
+                  <span>Insira um e-mail válido</span>
+                </div>
+              </div>
+
+              <fieldset class="enroll-options">
+                <legend>Opções de matrícula</legend>
+                <div class="input-wrapper">
+                  <label>Selecione o turno de estudo</label>
+                
+                  <div class="radio-wrapper">
+                      <div class="radio-inner">
+                        <div class="check-icon"></div>
+                        <input type="radio" name="study-shift" value="morning" id="morning">
+                        <img src="assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
+                        <label for="morning">Manhã</label>
+                      </div>
+                
+                     <div class="radio-inner">
+                        <div class="check-icon"></div>
+                        <input type="radio" name="study-shift" value="evening" id="evening">
+                        <img src="assets/icons/sun-02.svg" alt="ícone de sol">
+                        <label for="evening">Tarde</label>
+                     </div>
+                </div>
+                
+                </div>
+              </fieldset>
+
+            </fieldset>
           </form>
 
       </div>
